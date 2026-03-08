@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Eman Albqour | Architecture Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="home">
+    <!-- Cinematic transition overlay -->
+    <div class="transition" aria-hidden="true">
+      <div class="transition__bars">
+        <div class="transition__bar transition__bar--top"></div>
+        <div class="transition__bar transition__bar--bottom"></div>
+      </div>
+      <div class="transition__veil"></div>
+      <div class="transition__grain"></div>
+    </div>
+
+    <header class="header">
+      <nav class="nav" aria-label="Navigation">
+        <a class="nav__brand" href="index.html" data-transition>
+          <span class="nav__brandMark" aria-hidden="true">Arch</span>
+          <span class="nav__brandText">Eman Albqour</span>
+        </a>
+        <div class="nav__links">
+          <a class="nav__link nav__link--active" href="index.html" data-transition>Home</a>
+          <a class="nav__link" href="works.html" data-transition>Works</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero" data-reveal>
+        <div class="hero__grid">
+          <div class="hero__media" aria-label="Portrait">
+            <div class="hero__photoWrap">
+              <img class="hero__photo" src="assets/Eman.jpeg" alt="Portrait of Eman Albqour" />
+              <div class="hero__frame" aria-hidden="true"></div>
+            </div>
+            <div class="hero__identity">
+              <h2 class="hero__identityName">Eman Albqour</h2>
+              <p class="hero__identityTitle">Architecture Student</p>
+            </div>
+          </div>
+
+          <div class="hero__content">
+            <h1 class="hero__title">Hello, I’m <span class="hero__name">Eman Albqour</span>.</h1>
+            <div class="hero__subtitleGroup">
+              <p class="hero__subtitle">
+                Final-year Architecture student at the University of Jordan with strong academic training in architectural design and BIM-based documentation.
+              </p>
+              <p class="hero__subtitle hero__subtitle--secondary">
+                Experienced in developing projects from urban analysis to technical drawings and high-quality visualization, with a strong interest in sustainable and context-driven architecture.
+              </p>
+            </div>
+
+            <div class="hero__meta" aria-label="Quick info">
+              <div class="meta meta--block">
+                <div class="meta__grid meta__grid--mixed">
+                  <div class="meta__pair">
+                    <span class="meta__label">Age</span>
+                    <span class="meta__value meta__value--counter">
+                      <span class="meta__count" data-count-to="23" data-count-duration="1.05" data-count-decimals="0">23</span>
+                    </span>
+                  </div>
+                  <div class="meta__pair">
+                    <span class="meta__label">Nationality</span>
+                    <span class="meta__value">Jordanian</span>
+                  </div>
+                  <div class="meta__pair">
+                    <span class="meta__label">University</span>
+                    <span class="meta__value">University of Jordan</span>
+                  </div>
+                  <div class="meta__pair">
+                    <span class="meta__label">Field</span>
+                    <span class="meta__value">Architecture | Urban Design | Sustainable Design</span>
+                  </div>
+                  <div class="meta__pair">
+                    <span class="meta__label">GPA</span>
+                    <span class="meta__value meta__value--counter">
+                      <span class="meta__count" data-count-to="3.3" data-count-duration="1.2" data-count-decimals="1">3.3</span>/4.00 (Very good)
+                    </span>
+                  </div>
+                  <div class="meta__pair">
+                    <span class="meta__label">Graduation</span>
+                    <span class="meta__value">Aug 2026</span>
+                  </div>
+                  <div class="meta__pair">
+                    <span class="meta__label">Email</span>
+                    <a class="meta__value link" href="mailto:emanalbqour@gmail.com">emanalbqour@gmail.com</a>
+                  </div>
+                  <div class="meta__pair">
+                    <span class="meta__label">Phone</span>
+                    <a class="meta__value link" href="tel:+962782499950">+962 78 249 9950</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__actions">
+              <a class="button button--primary" href="works.html" data-transition>View Works</a>
+              <a class="button button--ghost" href="assets/EmanCv.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
